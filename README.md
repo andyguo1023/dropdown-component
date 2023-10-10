@@ -29,16 +29,17 @@ The componenet takes in various props:
 
 | Props | Meaning |
 |--------------|---------------------------------------------------------------------------------------------|
-| dropdownName | A String that is displayed as the name of the menu on the button. |
+| dropdownName | A `String` that is displayed as the name of the menu on the button. |
 | data | JSON data. |
-| multiSelect | A Boolean variable to indicate if the dropdown supports multiple selections. |
-| required | A Boolean variable to indicate if selection is required. |
-| labelField | A String. Displayed in the dropdown. |
-| valueField | A String. Unique Identifier for each data entry |
+| multiSelect | A `Boolean` variable to indicate if the dropdown supports multiple selections. |
+| required | A `Boolean` variable to indicate if selection is required. |
+| labelField | A `String`. Displayed in the dropdown. |
+| valueField | A `String`. Unique Identifier for each data entry |
     
 
-For persons.json, each person object has an id, name, and age. 
-name is used as labelField; id is used as valueField. 
+For `persons.json`, each person object has an `id, name, and age`. 
+
+`name` is used as `labelField`; `id` is used as `valueField`. 
 
 
 - Data
@@ -47,7 +48,7 @@ name is used as labelField; id is used as valueField.
         - persons.json
         - countries.json
     
-    We can also create a quick async await function wrapped in useEffect() to fetch dropdown items from an API. 
+    We can also create a quick async await function wrapped in `useEffect()` to fetch dropdown items from an API. 
 
 - Performance
     
