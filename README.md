@@ -22,6 +22,14 @@ CSS is through TailwindCSS.
 
 - Dropdown components are all under /components/Dropdown/
 
+## Under the hood
+
+The Dropdown is designed to take in a list of JSON objects for flexibility. 
+
+For multiselect, users can directly remove selected options and not having to go through the dropdown. Of course, you may also deselect from the dropdown list. 
+
+Some helper components are built, such as `selectedOption`, `Divider`, `Item`, `selectAll`, and `deselectAll`. 
+
 ### The Component
     
 
