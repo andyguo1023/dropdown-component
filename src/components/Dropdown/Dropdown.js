@@ -87,7 +87,7 @@ const Dropdown = ({
         {dropdownName}
       </p>
       <button
-        className="border-2 border-blue-400 text-black py-2 px-4 rounded w-56"
+        className="border-2 border-blue-400 text-black py-2 px-4 rounded w-56 flex flex-wrap"
         onClick={toggleDropdown}
       >
         {selectedOptions.length > 0 ? (
