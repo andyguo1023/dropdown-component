@@ -22,25 +22,31 @@ CSS is through TailwindCSS.
 
 ### The Component
     The componenet takes in various props:
-        | Props | Meaning|
-        | ----- | ------ |
-        | dropdownName | a `String` that is displayed as the name of the menu on the button |
-        | data | JSON data |
-        | multiSelect | a `Boolean` variable to indicate if the dropdown supports multiple selections |
-        | required | a `Boolean` variable to indicate if selection is required |
-        | labelField | a `String` to indicate the data field for display |
-        | valueField | a `String` to indicate the data field that is registered as value. |
+        
+        
+| Props | Meaning |
+|--------------|---------------------------------------------------------------------------------------------|
+| dropdownName | A String that is displayed as the name of the menu on the button. |
+| data | JSON data. |
+| multiSelect | A Boolean variable to indicate if the dropdown supports multiple selections. |
+| required | A Boolean variable to indicate if selection is required. |
+| labelField | A String to indicate the data field for display. |
+| valueField | A String to indicate the data field that is registered as value. |
     
 
 - Data
     For demo purpose, the data shown in the dropdown menu is stored locally under /assets.
+        
         - persons.json
         - countries.json
     
     We can also create a quick async await function wrapped in useEffect() to fetch dropdown items from an API. 
+
 - Performance
+    
     For incredibly large list, we can implement a lazy loading, like an infinite scroll. It can be argued that dropdown menus are not great for large list in terms of good UX practices. 
-        - A search and text matching may be better
+        
+    -   A search and text matching may be better
 
     Some potential improvements:
     - Manual Entry for nonexistent options
